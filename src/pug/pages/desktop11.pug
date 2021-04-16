@@ -1,0 +1,143 @@
+extends ../blocks/temp.pug
+
+block content
+  .container
+    .chapterOne
+      .chapterOne__Left 
+        .chapterOne__SightMenu 
+          .chapterOne__MenuTitle Профиль аккаунта
+          ul.chapterOne__Menu
+            li 
+              a(href="#").chapterOne__MenuOption
+                img(src="assets/img/user.png", alt="").chapterOne__OptionImg
+                .chapterOne__OptionText Личные данные
+            li 
+              a(href="#").chapterOne__MenuOption
+                img(src="assets/img/cart.png", alt="").chapterOne__OptionImg
+                .chapterOne__OptionText Последние покупки
+            li 
+              a(href="#").chapterOne__MenuOption
+                img(src="assets/img/config.png", alt="").chapterOne__OptionImg
+                .chapterOne__OptionText Последние покупки
+            li 
+              a(href="#").chapterOne__MenuOption
+                img(src="assets/img/exit.png", alt="").chapterOne__OptionImg
+                .chapterOne__OptionText Выйти
+      .chapterOne__Mid
+        .chapterOne__MidTop 
+          .chapterOne__MidTopLeft
+            span
+              img(src="assets/img/tick.png", alt="")
+          .chapterOne__MidTopRight
+            .top Annette Black 
+            .bottom User 
+        .chapterOne__MidMiddle
+          .chapterOne__MidMiddleTop
+            .typeInput
+              .typeInput__Text Имя
+              input(type="text" placeholder="John").typeInput__Text
+            .typeInput
+              .typeInput__Text Фамилия
+              input(type="text" placeholder="Washington").typeInput__Text
+          .chapterOne__MidMiddleBottom
+            .typeInput
+              .typeInput__Text Email
+              input(type="text" placeholder="example@gmail.com").typeInput__Text
+            .typeInput
+              .typeInput__Text Номер телефона
+              input(type="text" placeholder="(907) 555-0101").typeInput__Text
+        .chapterOne__MidBottom
+          button Изменить 
+      .chapterOne__Right
+        img(src="assets/img/poster.png", alt="")
+    .chapterTwo
+      .chapterTwo__Left
+        .chapterTwo__LeftTop Ваши карты
+        .chapterTwo__LeftBottom
+          .chapterTwo__Cards
+            span
+              button 
+                img(src="assets/img/delete.png", alt="")
+            .cardOne
+            .cardTwo
+            .cardThree
+          .chapterTwo__Arrow
+            button 
+              img(src="assets/img/ri.png", alt="")
+      .chapterTwo__Right
+        .chapterTwo__Form 
+          .chapterTwo__FormTitle Добавить карту
+          .chapterTwo__Input 
+            .chapterTwo__InputTop Фамилия и имя владельца карты
+            .chapterTwo__InputBottom
+              img(src="assets/img/userman.png", alt="")
+              input(type="text")
+            .chapterTwo__divider 
+          .chapterTwo__Input 
+            .chapterTwo__InputTop Номер карты
+            .chapterTwo__InputBottom
+              img(src="assets/img/credit.png", alt="")
+              input(type="text")
+            .chapterTwo__divider 
+          .chapterTwo__InputExtra
+            .chapterTwo__Input 
+              .chapterTwo__InputTop Месяц
+              .chapterTwo__InputBottom
+                img(src="assets/img/data.png", alt="")
+                input(type="text").inputLeft
+              .chapterTwo__dividerLeft
+            .chapterTwo__Input 
+              .chapterTwo__InputTop Год
+              .chapterTwo__InputBottom
+                img(src="assets/img/data.png", alt="")
+                input(type="text").inputRight
+              .chapterTwo__dividerRight
+        .chapterTwo__Apply 
+          button Добавить
+    .chapterThree
+      .chapterThree__Left 
+        .chapterThree__LeftTitle История покупок
+        .chapterThree__LeftList
+          .chapterThree__ListItem 
+            .chapterThree__ListLeft
+              button.chapterThree__Btn
+                img(src="assets/img/download.png", alt="")
+                .chapterThree__BtnText Скачать
+              .chapterThree__Info
+                .chapterThree__InfoLeft 3/4/16
+                .chapterThree__InfoMid |
+                .chapterThree__InfoRight 7213 **** **** 8321
+            .chapterThree__LeftPrice 100$
+          .chapterThree__ListItem 
+            .chapterThree__ListLeft 
+              button.chapterThree__Btn
+                img(src="assets/img/download.png", alt="")
+                .chapterThree__BtnText Скачать
+              .chapterThree__Info
+                .chapterThree__InfoLeft 3/4/16
+                .chapterThree__InfoMid |
+                .chapterThree__InfoRight 7213 **** **** 8321
+            .chapterThree__LeftPrice 100$
+          .chapterThree__ListItem 
+            .chapterThree__ListLeft 
+              button.chapterThree__Btn
+                img(src="assets/img/download.png", alt="")
+                .chapterThree__BtnText Скачать
+              .chapterThree__Info
+                .chapterThree__InfoLeft 3/4/16
+                .chapterThree__InfoMid |
+                .chapterThree__InfoRight 7213 **** **** 8321
+            .chapterThree__LeftPrice 100$
+          .chapterThree__ListItem 
+            .chapterThree__ListLeft 
+              button.chapterThree__Btn
+                img(src="assets/img/download.png", alt="")
+                .chapterThree__BtnText Скачать
+              .chapterThree__Info
+                .chapterThree__InfoLeft 3/4/16
+                .chapterThree__InfoMid |
+                .chapterThree__InfoRight 7213 **** **** 8321
+            .chapterThree__LeftPrice 100$
+      .chapterThree__Right
+        img(src="assets/img/poster2.png", alt="")
+

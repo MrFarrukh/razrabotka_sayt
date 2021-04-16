@@ -1,0 +1,400 @@
+@font-face{
+    font-family: 'merriweather-r';
+    src: url(../fonts/Merriweather-Regular.ttf);
+  }
+  @font-face{
+    font-family: 'merriweather-b';
+    src: url(../fonts/Merriweather-Bold.ttf);
+  }
+  @font-face{
+    font-family: 'merriweather-bl';
+    src: url(../fonts/Merriweather-Black.ttf);
+  }
+  @font-face{
+    font-family: 'marmelad';
+    src: url(../fonts/Marmelad-Regular.ttf);
+  }
+  @font-face{
+    font-family: 'montserrat-m';
+    src: url(../fonts/Montserrat-Medium.ttf);
+  }
+  @font-face{
+    font-family: 'montserrat-r';
+    src: url(../fonts/Montserrat-Regular.ttf);
+  }
+  
+  body{
+    font-family: 'merriweather-r';
+  }
+  
+  .container{
+    max-width: 1824px;
+    margin: auto;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+  button:focus{
+    outline: 0;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  input:focus{
+    outline: 0;
+  }
+  
+  .chapterOne{
+    display: flex;
+    padding-top: 21px;
+    &__Left{
+      margin-right: 130px;
+    }
+    &__SightMenu{
+      background-color: #F2994A;
+      border-radius: 30px;
+      padding: 23px 80px 57px 32px;
+      width: 290px;
+      height: 245px;
+    }
+    &__MenuTitle{
+      font-family: 'montserrat-m';
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    &__MenuOption{
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    &__OptionText{
+      margin-left: 10px;
+      color: #fff;
+      font-family: 'montserrat-r';
+      font-size: 14px;
+    }
+    &__Mid{
+      margin-right: 150px;
+    }
+    &__MidTop{
+      display: flex;
+      margin-bottom: 34px;
+    }
+    &__MidTopLeft{
+      width: 100px;
+      height: 100px;
+      background-color: #C4C4C4;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 0px 7px 17px 2px #ccc;
+      margin-right: 28px;
+      span{
+        position: absolute;
+        background-color: #27AE60;
+        border-radius: 50%;
+        display: flex;
+        bottom: 7px;
+        right: 5px;
+        padding: 5px;
+        border: 2px solid #ccc;
+        box-shadow: 0px 7px 17px 2px #ccc;
+        img{
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+    &__MidTopRight{
+      margin-top: 13px;
+      .top{
+        font-family: 'marmelad';
+        color: #F2994A;
+        margin-bottom: 6px;
+      }
+      .bottom{
+        font-family: 'montserrat-r';
+        font-size: 14px;
+        color: #AAAAAA;
+      }
+    }
+    &__MidMiddleTop{
+      display: flex;
+      margin-bottom: 13px;
+      .typeInput{
+        margin-right: 28px;
+        input{
+          background: #EFEFEF;
+          border: 1px solid #C9C9C9;
+          box-sizing: border-box;
+          border-radius: 5px;
+          padding: 9px 15px;
+          width: 237px;
+          height: 35px;
+          color: #000;
+          font-family: 'marmelad';
+          font-size: 14px;
+          &::placeholder{
+            color: #000000;
+            opacity: 0.5;
+            font-family: 'marmelad';
+            font-size: 14px;
+          }
+        }
+        &__Text{
+          font-family: 'marmelad';
+          font-size: 14px;
+          color: #F2994A;
+          padding-left: 11px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &__MidMiddleBottom{
+      display: flex;
+      .typeInput{
+        margin-right: 28px;
+        input{
+          background: #EFEFEF;
+          border: 1px solid #C9C9C9;
+          box-sizing: border-box;
+          border-radius: 5px;
+          padding: 9px 15px;
+          width: 237px;
+          height: 35px;
+          color: #000;
+          font-family: 'marmelad';
+          font-size: 14px;
+          &::placeholder{
+            color: #000000;
+            opacity: 0.5;
+            font-family: 'marmelad';
+            font-size: 14px;
+          }
+        }
+        &__Text{
+          font-family: 'merriweather-r';
+          font-size: 14px;
+          color: #AAAAAA;
+          padding-left: 11px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+    &__MidBottom{
+      display: flex;
+      justify-content: center;
+      margin-top: 51px;
+      button{
+        font-family: 'marmelad';
+        font-size: 24px;
+        padding: 15px 76px;
+        background-color: #F2994A;
+        color: #fff;
+        box-shadow: 0px 5px 5px rgba(242, 153, 74, 0.36);
+        border: 0;
+        border-radius: 15px;
+      }
+    }
+  }
+  
+  .chapterTwo{
+    margin-top: 73px;
+    display: flex;
+    &__Left{
+      margin-left: 420px;
+    }
+    &__LeftTop{
+      font-family: 'merriweather-r';
+      font-size: 18px;
+      line-height: 22px;
+      padding-left: 30px;
+      margin-bottom: 28px;
+      margin-top: 27px;
+    }
+    &__LeftBottom{
+      display: flex;
+    }
+    &__Cards{
+      display: flex;
+      max-width: 437px;
+      position: relative;
+      span{
+        z-index: 4;
+        button{
+          background: 0;
+          border: 0;
+          position: absolute;
+          top: 19px;
+          left: 307px;
+        }
+      }
+      .cardOne,
+      .cardTwo,
+      .cardThree{
+        background-color: #C4C4C4;
+        width: 348px;
+        height: 204px;
+        position: absolute;
+        box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+      }
+      .cardThree{
+        z-index: 3;
+      }
+      .cardTwo{
+        z-index: 2;
+        left: 40px;
+      }
+      .cardOne{
+        z-index: 1;
+        left: 90px;
+      }
+    }
+    &__Arrow{
+      margin-left: 460px;
+      margin-top: 87px;
+      button{
+        background: 0;
+        border: 0;
+      }
+    }
+    &__Right{
+      margin-left: 100px;
+    }
+    &__FormTitle{
+      font-family: 'merriweather-r';
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    &__InputExtra{
+      display: flex;
+    }
+    &__InputTop{
+      font-family: 'marmelad';
+      font-size: 14px;
+      color: #F2994A;
+      margin-bottom: 15px;
+      margin-top: 25px;
+    }
+    &__InputBottom{
+      display: flex;
+      img{
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      input{
+        font-family: 'marmelad';
+        font-size: 14px;
+        border: 0;
+        width: 100%;
+        height: 20px;
+      }
+      .inputLeft{
+        width: 56px;
+      }
+      .inputRight{
+        width: 80px;
+      }
+    }
+    &__divider{
+      width: 348px;
+      height: 1px;
+      background-color: #F2994A;
+    }
+    &__dividerLeft{
+      width: 86px;
+      height: 1px;
+      background-color: #F2994A;
+      margin-right: 20px;
+    }
+    &__dividerRight{
+      width: 112px;
+      height: 1px;
+      background-color: #F2994A;
+    }
+    &__Apply{
+      display: flex;
+      justify-content: center;
+      button{
+        border: 0;
+        background-color: #F2994A;
+        padding: 15px 84px;
+        box-shadow: 0px 5px 5px rgba(242, 153, 74, 0.36);
+        border-radius: 15px;
+        margin-top: 30px;
+        font-family: 'marmelad';
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+  
+  .chapterThree{
+    display: flex;
+    &__Left{
+      margin-left: 420px;
+    }
+    &__LeftTitle{
+      font-family: 'merriweather-r';
+      font-size: 18px;
+      line-height: 22px;
+      padding-left: 30px;
+      margin-bottom: 30px;
+      margin-top: 100px;
+    }
+    &__ListItem{
+      width: 652px;
+      height: 100px;
+      background: #F8F8FF;
+      border: 1px solid #CCCCCC;
+      box-sizing: border-box;
+      border-radius: 30px;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 28px 23px 16px;
+      margin-bottom: 10px;
+    }
+    &__Btn{
+      display: flex;
+      border: 0;
+      background-color: #F2994A;
+      border-radius: 12px;
+      padding: 9px 49px 9px 15px;
+      color: #fff;
+      font-family: 'merriweather-r';
+      font-size: 12px;
+      margin-bottom: 13px;
+      img{
+        margin-right: 19px;
+      }
+    }
+    &__Info{
+      display: flex;
+      color: #9F9F9F;
+      font-size: 12px;
+    }
+    &__InfoMid{
+      margin-left: 15px;
+      margin-right: 15px; 
+    }
+    &__LeftPrice{
+      color: #F2994A;
+      display: flex;
+      align-items: center;
+      font-family: 'merriweather-b';
+      font-size: 18px;
+    }
+    &__Right{
+      margin-top: 148px;
+      margin-left: 150px;
+    }
+  }
+
+  .chapterThree__Left {
+    margin-left: 420px;
+    margin-bottom: 150px;
+}

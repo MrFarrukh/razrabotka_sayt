@@ -1,0 +1,275 @@
+// @import 'blocks/vars';
+
+// body,*{
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+// @import 'blocks/head';
+
+@font-face{
+  font-family: 'merriweather-r';
+  src: url(../fonts/Merriweather-Regular.ttf);
+}
+@font-face{
+  font-family: 'merriweather-b';
+  src: url(../fonts/Merriweather-Bold.ttf);
+}
+@font-face{
+  font-family: 'merriweather-bl';
+  src: url(../fonts/Merriweather-Black.ttf);
+}
+@font-face{
+  font-family: 'marmelad';
+  src: url(../fonts/Marmelad-Regular.ttf);
+}
+@font-face{
+  font-family: 'montserrat-m';
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face{
+  font-family: 'montserrat-r';
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body{
+  font-family: 'merriweather-r';
+}
+
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+button:focus{
+  outline: 0;
+}
+button:hover{
+  cursor: pointer;
+}
+input:focus{
+  outline: 0;
+}
+textarea:focus{
+  outline: 0;
+}
+
+.wall{
+  margin-top: 48px;
+  display: flex;
+  &__Poster{
+    img{
+      width: 1124px;
+      height: 569px;
+      border-radius: 58px;
+    }
+  }
+  &__LeftPics{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  &__LeftPic{
+    width: 70px;
+    height: auto;
+    margin-right: 30px;
+    border-radius: 20px;
+  }
+  &__Mid{
+    width: 1px;
+    height: 595px;
+    background-color: #F2994A;
+    margin-left: 30px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 17px;
+  }
+  &__Cross{
+    background-color: #F2994A;
+    padding: 9px;
+    border: 0;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    display: flex;
+  }
+  &__RightTopTitle{
+    font-size: 18px;
+    color: #F2994A;
+    margin: 21px 0px 20px 30px;
+  }
+  &__RightTopComment{
+    width: 622px;
+    height: 100px;
+    border: 0;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FEBB7F 0%, #F2994A 100%);
+    padding-bottom: 14px;
+    padding-left: 17px;
+    padding-top: 14px;
+    padding-right: 19px;
+    color: #fff;
+    font-size: 12px;
+  }
+  &__RightTopArea{
+    position: relative;
+  }
+  &__RightTopComment::placeholder{
+    color: #fff;
+    font-size: 12px;
+  }
+  &__TopRightSend{
+    position: absolute;
+    background-color: #27AE60;
+    padding: 10px 10.9px 11px 11px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 36.5px;
+    height: 36.5px;
+    bottom: -13px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__RightBottom{
+    margin-top: 8px;
+    position: relative;
+  }
+  &__RightBottomDash{
+    height: 334px;
+    border: 1px dashed #F2994A;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    z-index: -1;
+  }
+  &__RightBottomUser{
+    margin-bottom: 20px;
+    display: flex;
+    .userLeft{
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+    .userRight{
+      margin-left: 20px;
+      .userTitle{
+        display: flex;
+        color: #F2994A;
+        .userName{
+          font-family: 'merriweather-b';
+          margin-right: 20px;
+        }
+        .userDate{
+          font-size: 12px;
+        }
+      }
+      .userComment{
+        margin-top: 10px;
+        max-width: 573px;
+        font-size: 12px;
+        opacity: 0.5;
+      }
+    }
+  }
+  &__RightBottomUserL{
+    margin-left: 70px;
+    display: flex;
+    margin-bottom: 20px;
+    .userLeft{
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+    .userRight{
+      margin-left: 20px;
+      .userTitle{
+        display: flex;
+        color: #F2994A;
+        .userName{
+          font-family: 'merriweather-b';
+          margin-right: 20px;
+        }
+        .userDate{
+          font-size: 12px;
+        }
+      }
+      .userComment{
+        margin-top: 10px;
+        max-width: 503px;
+        font-size: 12px;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.productsBack{
+  margin-top: 70px;
+  background-size: cover;
+  height: 653px;
+  width: 100%;
+}
+
+.products{
+  margin-left: 165px;
+  &__Title{
+    padding-top: 66px;
+    font-size: 18pz;
+    font-family: 'merriweather-b';
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  &__Items{
+    display: flex;
+    
+  }
+  &__Item{
+    width: 258px;
+    height: 330px;
+    background: #EEEEEE;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    text-align: center;
+    transition: all ease 0.5s;
+    &:hover{
+      transform: scaleY(1.05);
+    }
+    .itemImg{
+      border-radius: 15px;
+      
+    }
+    .itemInfo{
+      font-size: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .itemPrice{
+      font-family: 'merriweather-bl';
+    }
+    .itemButton{
+      background-color: #eee;
+      padding: 9px 80px 12px;
+      margin-bottom: 39px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 5px; 
+      color: #4D4D4D;
+      font-family: 'marmelad';
+    }
+  }
+}

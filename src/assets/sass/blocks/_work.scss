@@ -1,0 +1,71 @@
+.work{
+    &__left{
+        margin-left: 210px;
+        margin-top: 40px;
+    }
+    border-top: 0.3px solid #5853B1;
+    &__h1{
+        text-align: center;
+        font-family: Marmelad;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: #5853B1;
+        margin-top: 66px;
+    }
+    &__right{
+        &__img{
+            img{
+                margin-left: 67px;
+            }
+        }
+        &__btn{
+            padding: 22px 98px;
+            background: #F2994A;
+            box-shadow: 0px 5px 10px rgba(242, 153, 74, 0.45);
+            border-radius: 75px;
+            cursor: pointer;
+            font-family: Merriweather;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: #FFFFFF;
+            border: 0;
+            margin-left: 97px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        &__btn:focus{
+            outline: 0;
+        }
+        &__p{
+            width: 900px;
+            margin-bottom: 12px;
+            margin-left: 97px;
+            font-family: Marmelad;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #3F3F3F;
+        }
+        &__h2{
+            margin-top: 88px;
+            font-family: Marmelad;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #5853B1;
+            margin-bottom: 10px;
+            margin-left: 97px;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        
+    }
+}
+//////////////////////infooooooooooooooooooooooooooos

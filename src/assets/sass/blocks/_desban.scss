@@ -1,0 +1,243 @@
+.desban__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.desban__h1{
+    font-family: 'mr-r';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 39px;
+    line-height: 49px;
+    color: #FFFFFF;
+    padding-top: 98px;
+    padding-left: 201px;
+}
+.desban{
+    background: linear-gradient(180deg, #FEBB7F 0%, #F2994A 100%);
+}
+.desban__p{
+    font-family: 'mr-r';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding-left: 201px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+.desban__btn{
+    padding: 10px 47px;
+    background: #FFFFFF;
+    border-radius: 75px;
+    font-family: 'mr-r';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3F3F3F;
+    border: 0;
+    cursor: pointer;
+    margin-left: 201px;
+}
+.desban__btn:focus{
+    outline: 0;
+}
+.desban__right{
+    img{
+        margin-right: 169px;
+        margin-top: -82px;
+    }
+}
+.desban__all{
+    display: flex;
+    justify-content: space-between;
+}
+.desban__inpt{
+    width: 1176px;
+    height: 50px;
+    background: #EEEEEE;
+    border: 1px solid #ACACAC;
+    box-sizing: border-box;
+    border-radius: 49px;
+    padding-left: 54px;
+}
+.desban__inpt:focus{
+    outline: 0;
+}
+.desban__input{
+    img{
+        position: absolute;
+        padding-top: 19px;
+        padding-left: 14px;
+    }
+}
+.desban__second{
+    margin-top: 20px;
+}
+
+
+//////////////////////////////////////////////////
+
+.designbtn__one {
+    margin: 0px;
+}
+
+.designbtn__two input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.designbtn__two label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 468px;
+    max-width: 494px;
+    height: 44px;
+    background: #febb7fd9;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+
+.designbtn__two label:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    width: 300px;
+    height: 50px;
+    background: #F2994A;
+    border-radius: 90px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #F2994A;
+}
+
+.designbtn__two input:checked+label,
+.designbtn__two input:checked+input+label {
+    background: #febb7fd9;
+}
+
+.designbtn__two input+label:before,
+.designbtn__two input+input+label:before {
+    content: 'Проекты';
+    position: absolute;
+    top: 14px;
+    left: 41px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+    font-family: 'mr-r';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    z-index: 1;
+}
+
+.designbtn__two input:checked+label:before,
+.designbtn__two input:checked+input+label:before {
+    content: 'Креативы';
+    position: absolute;
+    top: 14px;
+    left: 260px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+    font-family: 'mr-r';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.designbtn__two input:checked+label:after,
+.designbtn__two input:checked+input+label:after {
+    left: calc(100% - 1px);
+    transform: translateX(-100%);
+}
+
+.designbtn__two label:active:after {
+    width: 60px;
+}
+
+.toggle-switchArea {
+    margin: 10px 0 10px 0;
+}
+
+//////////////////////////////////////////
+
+
+.desban__ul{
+    display: flex;
+}
+.desban__li{
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 180px;
+    border: 1px solid #F49D50;
+    text-align: center;
+    padding: 12px 0px;
+    border-radius: 12px;
+    transition: all ease 0.5s;
+}
+.desban__a{
+    font-family: 'mr-r';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #3F3F3F;
+    text-decoration: none;
+}
+.desban__li:hover{
+    box-shadow: 0px 5px 10px rgba(242, 153, 74, 0.45);
+    transition: all ease 0.5s;
+}
+.desban__card{
+    img{
+        margin-right: 12px;
+    }
+    &__txt{
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        img{
+            height: 100%;
+        }
+        p{
+            color: #fff;
+        }
+    }
+}
+.desban__text__row{
+    margin-top: -65px;
+    position: absolute;
+    margin-left: 20px;
+}
+.desban__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.desban__card{
+    flex-basis: 25%;
+    width: 25%;
+    max-width: 25%;
+    padding: 30px 0;
+}
+.card__p{
+    font-family: 'mr-r';
+    font-weight: normal;
+    font-size: 14px;
+    color: #3F3F3F;
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 20px;
+}
